@@ -32,6 +32,6 @@ app.use((req, res) => {
   res.sendStatus(404);
 });
 
-app.listen(8000, () => {
+app.listen(PORT = process.env.PORT || 8000, () => {
   console.log('Running at Port 8080...');
 });
