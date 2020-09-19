@@ -3,6 +3,7 @@ var express = require('express');
 var path = require('path');
 var nunjucks = require('nunjucks');
 var app = express();
+var PORT = process.env.PORT || 8000;
 
 // nunjucksが動くrootディレクトリの設定。空文字でないとだめ。/だけだとテンプレートが見つからないエラーがでる。
 nunjucks.configure('', {
@@ -32,6 +33,6 @@ app.use((req, res) => {
   res.sendStatus(404);
 });
 
-app.listen(PORT = process.env.PORT || 8000, () => {
+app.listen(PORT, () => {
   console.log('Running at Port 8080...');
 });
