@@ -1,0 +1,155 @@
+html {
+	font-size: 16pt;
+}
+
+body {
+	background-color: whitesmoke;
+	font-family: 'Cormorant Garamond', serif;
+}
+
+section {
+	/* border-bottom: solid 1px dimgray; */
+}
+
+.section {
+	/* height: 100vh; */
+	background: whitesmoke;
+	margin: 1em 0;
+}
+
+.half-section {
+	/* height: 50vh; */
+	background: whitesmoke;
+}
+
+.dummy-section {
+	height: 50vh;
+	z-index: -6000;
+}
+
+.dummy-section.inter {
+	height: 25vh;
+}
+
+#Header {
+	width: 100%;
+	height: 90vh;
+	position: fixed;
+	border: solid whitesmoke 10px;
+	z-index: -5000;
+	overflow: hidden;
+}
+
+#SlideTop {
+	height: 100%;
+}
+
+.slide {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: -1;
+}
+
+.slide-img-wrapper {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.slide-img-wrapper::after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, .2);
+	z-index: 1;
+}
+
+@media screen and (orientation: landscape) {
+	.slide-img {
+		width: 150%;
+	}
+}
+
+@media screen and (orientation: portrait) {
+	.slide-img {
+		height: 100%;
+		object-fit: cover;
+	}
+}
+
+.heading {
+	text-decoration-line: underline;
+	color: ghostwhite;
+}
+
+.heading p:nth-child(1) {
+	font-size: 4.3rem;
+}
+
+.heading p:nth-child(2) {
+	font-size: 4.3rem;
+}
+
+.heading p:nth-child(3) {
+	font-size: 4.3rem;
+}
+
+.student-id {
+	position: absolute;
+	bottom: 2rem;
+	right: 0;
+	color: floralwhite;
+	font-size: 4rem;
+}
+
+.myname {
+	position: absolute;
+	bottom: 2em;
+	right: 0;
+	color: antiquewhite;
+	font-size: 4rem;
+}
+
+.title {
+	font-size: 3rem;
+	padding: 1em;
+}
+
+#Footer {
+	background: transparent;
+}
+
+.footer-img {
+	width: 100%;
+	object-fit: cover;
+}
+
+.endroll {
+	position: relative;
+	overflow: hidden;
+	padding-bottom: 30px;
+}
+
+.endroll div {
+	position: relative;
+	top: 0;
+	left: 50%;
+	transform: translate(-20%);
+}
+
+@media print {
+	section {
+		margin: 0;
+		box-shadow: none;
+		page-break-before: always;
+	}
+}
