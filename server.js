@@ -21,12 +21,20 @@ app.get('/', (req, res) => {
     res.render('index.njk', {
         title: 'Hello World!!'
     });
-});
-app.get('/ito2020', (req, res) => {
+}).get('/ito2020', (req, res) => {
 	res.render('ito2020/presentation.njk', {
 		title: 'ito2020 | presentation',
 	});
-});
+}).get('/phys-exp-1/x-ray', (req, res) => {
+	res.render('phys-exp-1/x-ray/index.njk', {
+		title: 'phys-exp-1 | x-ray',
+	});
+}).get('/phys-exp-1/elec-1', (req, res) => {
+	res.render('phys-exp-1/elec-1/index.njk', {
+		title: 'phys-exp-1 | elec-1',
+	});
+})
+
 
 
 app.use((req, res) => {
