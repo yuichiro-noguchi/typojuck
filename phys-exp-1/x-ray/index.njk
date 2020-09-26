@@ -7,26 +7,89 @@
 {% endblock %}
 
 {% block script_option %}
+<script src="static/script_typo.js" charset="utf-8"></script>
 {% endblock %}
 
 {% block progress %}
 {% endblock %}
 
 {% block header %}
+<header class="paper-header">
+	<div class="container">
+		<section id="Heading">
+			<h1 class="text-center" id="Title">X線回折実験レポート</h1>
+			<article class="auth-info">
+				<p class="text-center author">野口裕一郎</p>
+				<p class="text-center date">2020年10月15日</p>
+			</article>
+			<article class="abstract section">
+				<h2 class="py-5 text-center">概要</h2>
+				<p class="text-justify">　今年度最初の実験。双対空間についての技術的理解を得られたのが一番良かった。また、結晶による回折現象を理解する上で、簡易的で直感的なブラック回折条件が、きちんと結晶の構造を考えて強度を用いて回折を考えて得られるラウエ関数に基づく回折条件と等価であること、つまり、ブラックの回折条件が結晶回折の本質を抜き出していることに感銘を受けた。</p>
+			</article>
+		</section>
+	</div>
+</header>
 {% endblock %}
 
 {% block main %}
-<main>
+<main class="paper-body">
 	<div class="container">
-		<h1>MathJaxデビュー戦</h1>
-		<div class="">
-			<p>\[
-			\frac{b}{a}
-		\]</p>
-		</div>
+		<section class="indroduction section" id="Introduction">
+			<h2 class="section-title">イントロダクション</h2>
+			<div class="section-body">
+				<section class="sub-section">
+					<h4 class="sub-section-title">結晶格子面と逆格子空間</h4>
+					<div class="sub-section-body">
+						そもそも逆格子空間とは、ベクトル空間に対する双対空間の特別な場合である。 <br> 双対空間に対する数学的な理解と直感的な理解をもってすれば逆格子空間のことを理解することは容易い。
+					</div>
+				</section>
+				<section class="sub-section">
+					<h4 class="sub-section-title">結晶回折のブラック条件とラウエ条件</h4>
+					<div class="sub-section-body">
+
+					</div>
+				</section>
+				<section class="sub-section">
+					<h4 class="sub-section-title">X線回折法</h4>
+					<div class="sub-section-body">
+
+					</div>
+				</section>
+			</div>
+		</section>
+		<section class="method section" id="Method">
+			<h2 class="section-title">X線回折実験</h2>
+			<div class="section-body">
+				<section class="sub-section">
+					<h4 class="sub-section-title">ラウエ写真法</h4>
+					<div class="sub-section-body">
+
+					</div>
+				</section>
+			</div>
+		</section>
+		<section class="result section" id="Result">
+			<h2 class="section-title">実験結果</h2>
+		</section>
+		<section class="discussion section" id="Discusstion">
+			<h2 class="section-title">考察</h2>
+		</section>
+		<section class="conclusion section" id="Conclusion">
+			<h2 class="section-title">まとめ・結論</h2>
+		</section>
 	</div>
 </main>
 {% endblock %}
 
 {% block footer %}
+<footer class="paper-footer">
+	<div class="container">
+		<section class="bibliography section" id="Bibliography">
+			<h2 class="section-title">参考文献</h2>
+		</section>
+		<section class="appendix section" id="Appendix">
+			<h2 class="section-title">付録</h2>
+		</section>
+	</div>
+</footer>
 {% endblock %}
