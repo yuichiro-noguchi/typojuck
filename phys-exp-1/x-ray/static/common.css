@@ -2,6 +2,11 @@ body {
 	font-size: 10.5pt;
 	font-family: 'M PLUS 1p';
 	font-weight: 100;
+	text-align: justify;
+}
+
+.MathJax {
+	font-size: 1.25em !important;
 }
 
 .caption {
